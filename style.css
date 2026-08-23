@@ -1,0 +1,330 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 100px; 
+}
+.navBar{
+  background-color: #1e1e1e;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.topnav {
+  margin: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topnav a {
+  font-family: 'Geist Pixel', serif;
+  float: left;
+
+  background-image: linear-gradient(90deg, #ab0091, #7f00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 1000;
+  font-size: 17px;
+}
+
+.active {
+  border-radius: 5px;
+  color: #1c1c1c;
+  background-color: linear-gradient(90deg, #ab0091, #7f00ff);
+}
+
+body {
+  background-color: #1e1e1e;
+}
+.main {
+  width: auto;
+  height: 600px;
+  margin: 50px 10px 50px 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.divMain{
+  margin: 0px 10px 50px 10px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.divContents{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.divCard{
+  display: flex;
+  justify-content: center;
+  gap: 50px  ;
+  align-items: center;
+}
+.h1Main{
+  color: #ff00d9;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+.overview{
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.overview p .name{
+  /* color: #ab0091; */
+  background-image: linear-gradient(90deg, #ab0091, #7f00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 60px;
+}
+.overview .greet{
+
+  font-family: 'Geist Pixel', serif;
+  font-size: 45px;
+}
+.intro{
+  font-family: 'Inter', serif;
+}
+.pic img{
+  width: 500px;
+  height: 500px;
+}
+.introPic{
+  background-color: white;
+  background-image: url(images/IntroPic.png);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+   display: flex;
+  flex-direction: row;
+  justify-content: flex-start ;
+  align-items: center;
+}
+
+.card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  width: 350px; 
+  height: 300px;
+  background-color: #252525;
+  box-shadow: 5px 5px 15px 0px rgba(37, 37, 37, 0.2); 
+}
+.cardContents{
+  margin: 0 30px;
+}
+#activeCard{
+ background-color: #ab0091;
+}
+.projContent{
+  margin: 100px;
+}
+.imgProj{
+  border-radius: 10px ;
+  display: flex;
+  justify-content: flex-start ;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.languages {
+  border-radius: 10px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+.logo {
+  border-radius: 10px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.logo2 {
+  border-radius: 10px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+}
+.contacts{
+  /* gap: 100px  ; */
+  margin: 30px;
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+}
+.contacts h1{
+  font-size: 80px;
+}
+.contacts h2{
+  font-size: 40px;
+  margin: 20px  0;
+}
+.contContent{
+  width: 600px;
+  height: 500px;
+  padding: 50px;
+  background-image:  linear-gradient(90deg, #ab0091, #7f00ff);
+  border-radius: 10px;
+}
+.leftCont{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+  align-items: center;
+}
+
+#html {
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/html5.png);
+}
+#css {
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/css.png);
+}
+#python {
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/python.png);
+}
+#java {
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/java.png);
+}
+.icons {
+  margin-top: 10px;
+  gap: 10px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start ;
+  align-items: center;
+}
+.iconCard{
+  margin: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start ;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+#code{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/code1.png);
+}
+#canva{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/canva.png);
+}
+#auda{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/audacity.png);
+}
+#video{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/video.png);
+}
+#mic{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/mic.png);
+}
+#img1{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/proj1.jpg);
+}
+#img2{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/proj2.jpg);
+}
+#img3{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/proj3.jpg);
+}
+#twopic{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/2pic.jpg);
+}
+#git{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/git.png);
+}
+#fb{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/fb.png);
+}
+#mail{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/gmail.png);
+}
+#logo{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-image: url(images/logo.png);
+}
